@@ -1,0 +1,3 @@
+riot:
+  api:
+    X-Riot-Token: ${X_RIOT_TOKEN}
