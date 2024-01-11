@@ -1,11 +1,12 @@
 package com.albireo3754.pickbangg.request
 
+import com.albireo3754.pickbangg.riot.RiotApiConfigurationProperties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.reactive.function.client.WebClient
 
 @Configuration
-class WebClientConfig(val riotApiConfiguration: RiotApiConfiguration) {
+class WebClientConfiguration(val riotApiConfiguration: RiotApiConfigurationProperties) {
 
     @Bean
     fun riotWebClient() : WebClient {
