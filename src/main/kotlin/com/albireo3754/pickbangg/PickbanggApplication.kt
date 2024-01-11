@@ -1,19 +1,17 @@
 package com.albireo3754.pickbangg
 
-import com.albireo3754.pickbangg.request.LeagueEntryDTO
-import com.albireo3754.pickbangg.request.LeagueEntryDTOs
-import com.albireo3754.pickbangg.request.RiotApiConfiguration
+import com.albireo3754.pickbangg.riot.LeagueEntryDTO
+import com.albireo3754.pickbangg.riot.RiotApiConfigurationProperties
 import org.springframework.beans.factory.getBean
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.web.reactive.function.client.WebClient
-import reactor.core.publisher.Mono
 
 @SpringBootApplication
 @EnableConfigurationProperties(
-	RiotApiConfiguration::class
+	RiotApiConfigurationProperties::class
 )
 class PickbanggApplication {
 

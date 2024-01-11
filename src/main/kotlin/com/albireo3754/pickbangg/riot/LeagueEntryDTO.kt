@@ -1,4 +1,4 @@
-package com.albireo3754.pickbangg.request
+package com.albireo3754.pickbangg.riot
 
 data class LeagueEntryDTOs(val leagueEntryDTOs: Set<LeagueEntryDTO>) {
 }
