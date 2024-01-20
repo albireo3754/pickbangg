@@ -8,7 +8,7 @@ package com.albireo3754.pickbangg.request.summoner_v4
 // id	string	Encrypted summoner ID. Max length 63 characters.
 // puuid	string	Encrypted PUUID. Exact length of 78 characters.
 // summonerLevel	long	Summoner level associated with the summoner.
-class SummonerDTO(
+data class SummonerDTO(
     val accountId: String,
     val profileIconId: Int,
     val revisionDate: Long,

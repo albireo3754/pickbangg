@@ -1,7 +1,5 @@
-package com.albireo3754.pickbangg.riot
+package com.albireo3754.pickbangg.riot.dto
 
-data class LeagueEntryDTOs(val leagueEntryDTOs: Set<LeagueEntryDTO>) {
-}
 data class LeagueEntryDTO(
     val leagueId: String,
     val summonerId: String, // Player's encrypted summonerId.

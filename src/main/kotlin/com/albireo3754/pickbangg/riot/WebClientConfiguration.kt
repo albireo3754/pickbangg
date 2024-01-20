@@ -11,7 +11,7 @@ class WebClientConfiguration(val riotApiConfiguration: RiotApiConfigurationPrope
     @Bean
     fun riotWebClient() : WebClient {
         return WebClient.builder()
-            .baseUrl("https://kr.api.riotgames.com/lol/league/v4/entries")
+            .baseUrl("https://kr.api.riotgames.com")
             .defaultHeader("X-Riot-Token", riotApiConfiguration.X_Riot_Token)
             .build()
     }
